@@ -8,8 +8,12 @@ build:
 sphinx:
   configuration: docs/conf.py
 
+formats: all
+
 python:
   install:
-    - requirements: docs/requirements.txt
     - method: pip
       path: .
+      extra_requirements:
+        - '"cython<3.0.0" && pip install --no-build-isolation pyyaml==6.0'
+    - requirements: docs/requirements.tx
