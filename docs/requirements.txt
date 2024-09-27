@@ -83,5 +83,7 @@ urllib3>=1.26.19
 zipp>=3.19.1
     # via importlib-metadata
 
+cython<3.0.0
+
 # The following packages are considered to be unsafe in a requirements file:
 # setuptools
